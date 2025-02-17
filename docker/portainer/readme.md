@@ -53,3 +53,8 @@ services:
 ```bash
 docker-compose up -d
 ```
+5. Log in to Portainer:
+```bash
+https://<ip-address>:9443
+```
+**Note:** Don't forget to use `HTTPS`
