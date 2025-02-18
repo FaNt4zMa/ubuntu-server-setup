@@ -1,4 +1,4 @@
-# Timezone configuration
+# Timezone Configuration
 
 This guide covers different methods to set and verify the system timezone on Ubuntu.
 
