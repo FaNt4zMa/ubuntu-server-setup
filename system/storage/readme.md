@@ -112,7 +112,14 @@ This command will format the partition as `ext4`. Ensure you replace `/dev/sdX1`
 Once the partition is created and formatted, proceed with the mounting instructions outlined in the [Mounting the Drive](#mounting-the-drive) section of this guide to set up the partition for use.
 
 ## Reducing Filesystem Overhead (Optional)
-By default, ext4 reserves 5% of the filesystem for the root user, which helps prevent system failures when storage is full. You can reduce this to 1% (useful for large storage drives):
+By default, `ext4` reserves **5%** of the filesystem for the root user, which helps prevent system failures when storage is low. For large storage drives, you can reduce this reserved space to **1%** to make more space available for data.
+
+### Reduce Reserved Space
+To reduce the reserved space to **1%** on `ext4` filesystems, use the following command:
 ```bash
 sudo tune2fs -m 1 /dev/sdb1
 ```
+
+### Considerations
+* **System stability**: If the drive is used for system-critical tasks, it's recommended to keep the default 5% reserved space.
+* **For data drives**: Reducing the reserved space is usually fine for large storage drives, but ensure the system still has enough space for essential functions.
