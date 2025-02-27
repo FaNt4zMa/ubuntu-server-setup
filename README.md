@@ -16,7 +16,7 @@ After the first boot, update the system and install some essential utilities:
 sudo apt update
 sudo apt upgrade -y
 sudo apt autoremove -y
-sudo apt install neofetch htop -y
+sudo apt install neofetch btop -y
 ```
 ## Assign a Static IP
 Set a static IP for your machine in your router's DHCP settings.

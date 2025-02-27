@@ -11,7 +11,7 @@ sudo apt install unattended-upgrades -y
 ## 2. Configure Unattended Upgrades
 Run the following command to configure the package and enable automatic updates:
 ```bash
-dpkg-reconfigure --priority=low unattended-upgrades
+sudo dpkg-reconfigure --priority=low unattended-upgrades
 ```
 
 ## 3. Customize Update Settings (Optional)
