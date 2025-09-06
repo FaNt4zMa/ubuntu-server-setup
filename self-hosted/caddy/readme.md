@@ -110,10 +110,10 @@ sudo nano Caddyfile
 Here’s an example Caddyfile:
 ```
 sub.domain.com {
-    reverse_proxy 127.0.0.1:8096
-    tls {
-        dns cloudflare cloudflare-api
-    }
+        reverse_proxy 127.0.0.1:8096
+        tls {
+                dns cloudflare cloudflare-api
+        }
 }
 
 subdomain.duckdns.org {
@@ -137,7 +137,7 @@ Add the following to your Caddyfile, replacing `/your/path/of/choice` with your 
                 }
                 output file /your/path/of/choice/logs/access.log {
                         mode 644
-                        roll_size 50MiB
+                        roll_size 2MiB
                         roll_keep 20
                 }
         }
