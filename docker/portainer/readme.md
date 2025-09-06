@@ -24,7 +24,7 @@ Run Portainer using the docker run command, specifying the Docker volume you cre
 ```bash
 docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    -v portainer_data:/data portainer/portainer-ce:2.21.5
+    -v portainer_data:/data portainer/portainer-ce:lts
 ```
 ### Option 2: Docker Compose with Bind Mount
 1. Navigate to the directory where you want to store your docker-compose.yml file:
@@ -39,7 +39,7 @@ nano docker-compose.yml
 ```yaml
 services:
   portainer:
-    image: portainer/portainer-ce:2.21.5  # Pin version to avoid auto-updates by Watchtower
+    image: portainer/portainer-ce:lts  # Pin version to avoid auto-updates by Watchtower
     container_name: portainer
     volumes:
       - /your/path/of/choice/portainer_data:/data
