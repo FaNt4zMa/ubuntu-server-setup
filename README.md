@@ -28,7 +28,7 @@ To prevent the laptop from suspending when the lid is closed:
 sudo nano /etc/systemd/logind.conf
 ```
 2. Uncomment the following keys and change its values to ignore:
-```bash
+```ini
 HandleSuspendKey=ignore
 HandleLidSwitch=ignore
 HandleLidSwitchDocked=ignore

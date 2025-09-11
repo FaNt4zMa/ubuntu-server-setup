@@ -56,7 +56,7 @@ cd /etc/systemd/service
 sudo nano caddy.service
 ```
 Paste the following configuration into the file:
-```bash
+```ini
 # caddy.service
 #
 # For using Caddy with a config file.

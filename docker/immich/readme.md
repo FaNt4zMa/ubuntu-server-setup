@@ -23,7 +23,7 @@ Create a new systemd service to forward the logs:
 sudo nano /etc/systemd/system/immich-log-forward.service
 ```
 Paste the following content into the service file, making sure to replace {user} and {group} with the appropriate values:
-```bash
+```ini
 [Unit]
 Description=Forward Immich logs to a file
 After=network.target

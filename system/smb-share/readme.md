@@ -25,7 +25,7 @@ sudo nano /etc/samba/smb.conf
 ```
 ## 5. Add the Share Directory to the Samba Configuration  
 At the end of the file, add the following section to create the share. Replace <username> with your actual username:
-```bash
+```ini
 [share_name]
 path = /home/username/sambashare
 read only = no
